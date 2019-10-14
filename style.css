@@ -1,3 +1,7 @@
+body{
+	display: flex;
+    flex-wrap: wrap;
+}
 .pink{
 	width: 400px;
 	height: 200px;
@@ -34,6 +38,10 @@
 	white-space: nowrap;
 }
 
-.center{
-	
+.preview{
+	max-width: 100px;
+}
+
+.full-size{
+	max-width: 500px;
 }
