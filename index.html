@@ -4,7 +4,13 @@
 		<link rel="stylesheet" href="style.css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="js/preview.js"></script>
+		<script>
+			$(document).ready(function (){
+				$('.preview').click(function(){
+					$(this).toggleClass('full-size');
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class='pink'>
@@ -58,14 +64,14 @@
 		</div>
 		
 		<div>
-		<img src='images/1.jpg' class='preview' />
-		<img src='images/2.jpg' class='preview' />
-		<img src='images/3.jpg' class='preview' />
+			<img src='images/1.jpg' class='preview' />
+			<img src='images/2.jpg' class='preview' />
+			<img src='images/3.jpg' class='preview' />
 		
 		</div>
 		
 		
-		
+		<a href='users.html'>Список пользователей</a>
 		
 		
 		
