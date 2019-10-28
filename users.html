@@ -3,14 +3,8 @@
 		<title>Вкладка назвы</title>
 		<link rel="stylesheet" href="smile.css">
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function (){
-				$('.preview').click(function(){
-					$(this).toggleClass('full-size');
-				});
-			});
-		</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/users.js"></script>
 	</head>
 	<body>
 		<header>
@@ -54,11 +48,28 @@
 						</div>
 					</div>
 					<div>
-						
 						<input class='my-cool-button' type='button' value='+' />
-						<input class='my-cool-button' type='button' value='*' />
 						<input class='my-cool-button' type='button' value='-' />
-						
+						<input class='my-cool-button' type='button' value='x' />
+					</div>
+					<div>
+						<div>
+							<div class='spoiler-block'>
+								<p class='title'>main</p>
+								<p class='bit-text'>spoiler</p>
+							</div>
+							
+							
+							<div class='tag-block'>
+								<span class='tag'>Cute<a class='remove' href='#'>X</a></span>
+								<span class='tag'>Avatar<a class='remove' href='#'>X</a></span>
+							</div>
+							<div >
+								<input class='new-tag' />
+								<input class='my-cool-button add-tag' type='button' value='+' />
+							</div>
+							
+						</div>
 					</div>
 				</div>
 				
@@ -77,11 +88,27 @@
 						</div>
 					</div>
 					<div>
+						<input class='my-cool-button' type='button' value='+' />
+						<input class='my-cool-button' type='button' value='-' />
+						<input class='my-cool-button' type='button' value='x' />
+					</div>
+					<div>
 						<div>
-							<p>main</p>
-							<p>spoiler</p>
+							<div class='spoiler-block'>
+								<p class='title'>main</p>
+								<p class='bit-text'>spoiler</p>
+							</div>
 							
-							<a href='#'>X</a>
+							
+							<div class='tag-block'>
+								<span class='tag'>Cute<a class='remove' href='#'>X</a></span>
+								<span class='tag'>Avatar<a class='remove' href='#'>X</a></span>
+							</div>
+							<div >
+								<input class='new-tag' />
+								<input class='my-cool-button add-tag' type='button' value='+' />
+							</div>
+							
 						</div>
 					</div>
 				</div>

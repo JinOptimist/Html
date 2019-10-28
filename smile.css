@@ -29,6 +29,7 @@ header .title{
 .user-card{
 	width: 200px;
     border: 1px solid red;
+	padding: 10px;
 }
 
 .user-card .header{
@@ -60,3 +61,42 @@ header .title{
     background: gray;
     width: 26px;
 }
+
+.tag-block{
+	padding: 10px;
+}
+
+.tag{
+	border: 1px green solid;
+	border-radius: 15px;
+	padding: 2px 4px 2px 7px;
+}
+
+.tag .remove{
+	visibility: hidden;
+}
+
+.tag:hover .remove{
+	visibility: visible;
+}
+
+.spoiler-block{
+	border: 1px gray solid;
+	border-radius: 5px;
+	
+}
+.spoiler-block .title{
+	border-bottom: 1px gray solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
