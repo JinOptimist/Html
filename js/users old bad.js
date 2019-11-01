@@ -1,28 +1,28 @@
 $(document).ready(function(){
-	$(".content").on('click', '.spoiler-block .title', function (){
+	$('.spoiler-block .title').click(function (){
 		$(this).closest('.spoiler-block').find('.big-text').toggle(100);;
 	});
-
-	$(".content").on('click', '.font-size-add', function(){
+	
+	$('.font-size-add').click(function(){
 		var cardDiv = $(this).closest('.user-card');
 		var newSize = getBlockFonsSize(cardDiv) + 2;
 		cardDiv.css('font-size', newSize);
-	});	
+	});
 	
-	$(".content").on('click', '.font-size-minus', function(){
+	$('.font-size-minus').click(function(){
 		var cardDiv = $(this).closest('.user-card');
 		var newSize = getBlockFonsSize(cardDiv) - 2;
 		cardDiv.css('font-size', newSize);
 	});
 	
-	$(".content").on('click', '.add-tag', function(){
+	$('.add-tag').click(function(){
 		var userCard = $(this).closest('.user-card');
 		addTag(userCard);
 	});
 	
-	$(".content").on('click', '.tag .remove', tagRemove);
+	$('.tag .remove').click(tagRemove);
 	
-	$(".content").on('keypress', '.new-tag', function (e) {
+	$('.new-tag').keypress(function (e) {
 		//Enter
 		if (e.which == 13) {
 			var userCard = $(this).closest('.user-card');
@@ -31,13 +31,13 @@ $(document).ready(function(){
 		}
 	});
 
-	$(".content").on('click', '.add-user-card', function (){
+	$('.add-user-card').click(function (){
 		var userCard = $('.user-card.template').clone();
 		userCard.removeClass('template');
 		$('.content').append(userCard);
 	});
 	
-	$(".content").on('click', '.remove-user-card', function (){
+	$('.remove-user-card').click(function (){
 		$(this).closest('.user-card').remove();
 	});
 	
