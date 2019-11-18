@@ -156,7 +156,28 @@ header .title{
 	height: fit-content;
 }
 
+.edit{
+	display: flex;
+}
+.newValue{
+	width: 100%;
+    flex: 1;
+}
 
+.icon{
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.icon.add{
+	background-image:url(images/add.jpg);
+}
+
+.icon.cancel{
+	background-image:url(images/cancel.png);
+}
 
 
 

@@ -5,6 +5,7 @@
 		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/users.js"></script>
+		<script src="js/fast-edit.js"></script>
 	</head>
 	<body>
 		<header>
@@ -48,9 +49,14 @@
 							<img src='images/avatar1.jpg' />
 						</div>
 						<div>
-							<p>
-								Ivanov
-							</p>
+							<div class='editable'>
+								<span class='view'>Ivanov</span>
+								<div class='edit'>
+									<input class='newValue' />
+									<span class='icon add'></span>
+									<span class='icon cancel'></span>
+								</div>
+							</div>
 							<p>
 								Ivan
 							</p>
