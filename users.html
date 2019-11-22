@@ -8,6 +8,7 @@
 		<script src="js/fast-edit.js"></script>
 	</head>
 	<body>
+		<div class='cool-bg'></div>
 		<header>
 			<div>
 				<img src='images/logo.jpg' />
@@ -21,12 +22,50 @@
 		</header>
 		<div class='center-block'>
 			<div class='left-menu'>
-				<ul>
-					<li>
+				<ul class='menu'>
+					<li class='menu-item'>
 						<a href='index.html'>home page</a>
 					</li>
-					<li>
+					<li class='menu-item'>
 						<a href='users.html'>users</a>
+					</li>
+					<li class='menu-item'>
+						<a href='#'>point 3</a>
+						<ul class='menu'>
+							<li class='menu-item'>
+								point 3 1
+							</li>
+							<li class='menu-item'>
+								point 3 2
+							</li>
+						</ul>
+					</li>
+					<li class='menu-item'>
+						<a href='#'>point 4</a>
+						<ul class='menu'>
+							<li class='menu-item'>
+								point 4 1
+								<ul class='menu'>
+									<li class='menu-item'>
+										point 4 1 1
+									</li>
+									<li class='menu-item'>
+										point 4 1 2
+									</li>
+								</ul>
+							</li>
+							<li class='menu-item'>
+								point 4 2
+								<ul class='menu'>
+									<li class='menu-item'>
+										point 4 2 1
+									</li>
+									<li class='menu-item'>
+										point 4 2 2
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
@@ -143,9 +182,14 @@
 							<img src='images/avatar2.jpg' />
 						</div>
 						<div>
-							<p>
-								Ivanov
-							</p>
+							<div class='editable'>
+								<span class='view'>Ivanov</span>
+								<div class='edit'>
+									<input class='newValue' />
+									<span class='icon add'></span>
+									<span class='icon cancel'></span>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div>
