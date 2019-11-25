@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$(".close").click(function(){
+		$(this).closest(".popup-block").hide();
+	});
+	
 	$(".content").on('click', '.spoiler-block .title', function (){
 		$(this).closest('.spoiler-block').find('.big-text').toggle(100);;
 	});
