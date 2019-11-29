@@ -169,6 +169,7 @@ header .title{
 	height: 20px;
 	background-size: cover;
 	cursor: pointer;
+	display: inline-block;
 }
 
 .icon.add{
@@ -255,10 +256,50 @@ header .title{
 	display: block;
 }
 
+table{
+	border-collapse: collapse;
+}
+
+table tr td{
+	
+	border: 1px gray solid;
+}
+
+table tr:first-child{
+	font-size: 20px;
+}
 
 
 
+table tr:last-child{
+	font-weight: bold;
+	font-size: 30px;
+}
 
+table tr td:first-child{
+	border-right: 3px green dotted;
+}
+
+table tr td:last-child{
+	border-left: 3px red dotted;
+	text-align: center;
+}
+
+/* table tr:nth-child(2n + 3){ */
+	/* background: #c0a; */
+/* } */
+
+/* table tr:nth-child(3n + 2){ */
+	/* background: #ccc; */
+/* } */
+
+/* table tr:nth-child(4n + 3){ */
+	/* background: #cac; */
+/* } */
+
+/* table tr td:nth-child(3n + 1){ */
+	/* background: #cac; */
+/* } */
 
 
 
