@@ -1,3 +1,6 @@
+body{
+	margin: 0;
+}
 header{
 	display: flex;
 	justify-content: space-between;
@@ -22,8 +25,6 @@ header .title{
 
 .content{
 	flex: 1;
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .user-card{
@@ -49,6 +50,9 @@ header .title{
 
 .right-block{
 	width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 .right-block img{
@@ -212,10 +216,16 @@ header .title{
     height: 100vh;
     position: fixed;
     display: none;
-    align-items: center;
-    justify-content: center;
-	top: 0;
+    top: 0;
 	left: 0;
+}
+
+.popup-center{
+	align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
 
 .popup-background{
@@ -256,6 +266,19 @@ header .title{
 	display: block;
 }
 
+.middle-block{
+	display: flex;
+}
+
+.left-column{
+	width: 70px;
+}
+
+.user-cards{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 table{
 	border-collapse: collapse;
 }
@@ -285,26 +308,65 @@ table tr td:last-child{
 	text-align: center;
 }
 
-/* table tr:nth-child(2n + 3){ */
-	/* background: #c0a; */
-/* } */
+table tr:nth-child(2n + 3){
+	background: #c0a;
+}
 
-/* table tr:nth-child(3n + 2){ */
-	/* background: #ccc; */
-/* } */
+table tr:nth-child(3n + 2){
+	background: #ccc;
+}
 
-/* table tr:nth-child(4n + 3){ */
-	/* background: #cac; */
-/* } */
+table tr:nth-child(4n + 3){
+	background: #cac;
+}
 
-/* table tr td:nth-child(3n + 1){ */
-	/* background: #cac; */
-/* } */
-
-
+table tr td:nth-child(3n + 1){
+	background: #cac;
+}
 
 
+.fixed-menu{
+	position: fixed;
+    width: 50px;
+    overflow: hidden;
+    background: #666;
+	height: 100vh;
+    top: 0;
+	border: 10px #444 solid;
+}
 
+.fixed-menu:hover{
+	width: 150px;
+}
+
+.fixed-menu img{
+	max-width: 50px;
+	max-height: 50px;
+	cursor: pointer;
+}
+
+.fixed-menu div{
+	margin-top: 10px;
+    font-size: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.fixed-menu div:first-child{
+	margin-top: 0;
+}
+
+.fixed-menu a{
+	white-space: nowrap;
+	color: #fff;
+	display: flex;
+    align-items: center;
+	text-decoration: none;
+}
+
+.temin{
+	border: 3px red dotted;
+}
 
 
 

@@ -3,19 +3,13 @@
 		<title>Вкладка назвы</title>
 		<link rel="stylesheet" href="smile.css">
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function (){
-				$('.preview').click(function(){
-					$(this).toggleClass('full-size');
-				});
-			});
-		</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/users.js"></script>
+		<script src="js/fast-edit.js"></script>
 	</head>
 	<body>
 		<header>
 			<div>
-				<img src='images/logo.jpg' />
 			</div>
 			<div class='title'>
 				Anime nice
@@ -24,75 +18,776 @@
 				Logo
 			</div>
 		</header>
-		<div class='center-block'>
-			<div class='left-menu'>
-				<ul>
-					<li>
-						<a href='index.html'>home page</a>
-					</li>
-					<li>
-						<a href='users.html'>users</a>
-					</li>
-				</ul>
+		<div class='middle-block'>
+			<div class='left-column'>
+				<div class='fixed-menu'>
+					<div class='logo'>
+						<img src='images/logo.jpg' />
+					</div>
+					
+					<div>
+						<a href="#old"><img src='images/cards.jpg' />cards</a>
+					</div>
+					<div>
+						<a href="#girl"><img src='images/1.jpg' />girls</a>
+					</div>
+					<div>
+						<a href="#tableInfo"><img src='images/table-girl.jpg' />table</a>
+					</div>
+					<div>
+						<a href="#"><img src='images/avatar1.jpg' /> clear </a>
+					</div>
+				</div>
 			</div>
 			<div class='content'>
-				<div class='pink'>
-					<div class='black1'>
-						Title 1
-					</div>
-					<div class='black2'>
-						<div>column1 column1 column1 column1 column1 column1 column1 column1 column1</div>
-						<div>
+				<div class='center-block cards'>
+					<div id='old'>
+						<div class='user-cards'>
+							<div class='user-card add-user-card'>
+								<div class='header' >
+									<div>
+										<img src='images/add.jpg' />
+									</div>
+									<div>
+										<p>
+											Добавить пользователя
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class='user-card'>
+								<div class='header'>
+									<div>
+										<img src='images/avatar1.jpg' />
+									</div>
+									<div>
+										<div class='editable'>
+											<span class='view'>Ivanov</span>
+											<div class='edit'>
+												<input class='newValue' />
+												<span class='icon add'></span>
+												<span class='icon cancel'></span>
+											</div>
+										</div>
+										<p>
+											Ivan
+										</p>
+									</div>
+								</div>
+								<div>
+									<input class='my-cool-button font-size-add' type='button' value='+' />
+									<input class='my-cool-button font-size-minus' type='button' value='-' />
+									<input class='my-cool-button remove-user-card' type='button' value='x' />
+								</div>
+								<div>
+									<div>
+										<div class='spoiler-block'>
+											<p class='title'>main</p>
+											<p class='big-text'>spoiler</p>
+										</div>
+										
+										
+										<div class='tag-block'>
+											<span class='tag'>Cute<a class='remove' href='#'>X</a></span>
+											<span class='tag'>Avatar<a class='remove' href='#'>X</a></span>
+										</div>
+										<div >
+											<input class='new-tag' />
+											<input class='my-cool-button add-tag' type='button' value='+' />
+										</div>
+										
+									</div>
+								</div>
+							</div>
 							
-							<div>
-								<a href='https://github.com/JinOptimist/Html'>Скачать пример</a>
+							<div class='user-card'>
+								<div class='header'>
+									<div>
+										<img src='images/avatar2.jpg' />
+									</div>
+									<div>
+										<p>
+											Ivanov
+										</p>
+									</div>
+								</div>
+								<div>
+									<input class='my-cool-button font-size-add' type='button' value='+' />
+									<input class='my-cool-button font-size-minus' type='button' value='-' />
+									<input class='my-cool-button remove-user-card' type='button' value='x' />
+								</div>
+								<div>
+									<div>
+										<div class='spoiler-block'>
+											<p class='title'>main</p>
+											<p class='big-text'>spoiler</p>
+										</div>
+										
+										
+										<div class='tag-block'>
+											<span class='tag'>Cute<a class='remove' href='#'>X</a></span>
+											<span class='tag'>Avatar<a class='remove' href='#'>X</a></span>
+										</div>
+										<div >
+											<input class='new-tag' />
+											<input class='my-cool-button add-tag' type='button' value='+' />
+										</div>
+										
+									</div>
+								</div>
 							</div>
-							<div>
-								<a href='https://jinoptimist.github.io/Html/'>Посмотреть пример</a>
-							</div>
-							<div>
-								<a href='https://codecombat.com/'>code combat</a>
-							</div>
-							<div>
-								<a href='https://www.codewars.com/'>code wars</a>
-							</div>
+							
 						</div>
+					</div>
+				</div>
+				<div class='center-block girls'>
+					<div id='girl'>
+						<img style='width:500px;' src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112067639/original/6303c51d9bbea596ca27b6f31f7760f77240a137/draw-anime-girl-for-your-visual-novel.png' />
+						<img style='width:500px;' src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112067639/original/6303c51d9bbea596ca27b6f31f7760f77240a137/draw-anime-girl-for-your-visual-novel.png' />
+						<img style='width:500px;' src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112067639/original/6303c51d9bbea596ca27b6f31f7760f77240a137/draw-anime-girl-for-your-visual-novel.png' />
+						<img style='width:500px;' src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112067639/original/6303c51d9bbea596ca27b6f31f7760f77240a137/draw-anime-girl-for-your-visual-novel.png' />
+						<img style='width:500px;' src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112067639/original/6303c51d9bbea596ca27b6f31f7760f77240a137/draw-anime-girl-for-your-visual-novel.png' />
+						<img style='width:500px;' src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112067639/original/6303c51d9bbea596ca27b6f31f7760f77240a137/draw-anime-girl-for-your-visual-novel.png' />
+						<img style='width:500px;' src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112067639/original/6303c51d9bbea596ca27b6f31f7760f77240a137/draw-anime-girl-for-your-visual-novel.png' />
+					</div>
+				</div>
+				<div class='center-block myTable'>
+					<div id="tableInfo">
+						<h1>Table</h1>
+						<table>
+							<tr>
+								<td>
+									Id
+								</td>
+								<td>
+									Name
+								</td>
+								<td>
+									Desc
+								</td>
+								<td>
+									Img
+								</td>
+								<td>
+									Age
+								</td>
+								<td>
+									Pet
+								</td>
+								<td>
+									Color
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									10
+								</td>
+								<td>
+									qwe
+								</td>
+								<td>
+									Test
+								</td>
+								<td>
+									asdf
+								</td>
+								<td>
+									asdf
+								</td>
+								<td>
+									asdf
+								</td>
+								<td>
+									asdf
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									***
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									123
+								</td>
+								<td>
+									asdfasdf
+								</td>
+								<td>
+									asdf asdf
+								</td>
+								<td>
+									asdf
+								</td>
+								<td>
+									<div class='temin'>
+										123qwe
+										<div class='definition'>
+											a lot of word
+										</div>
+									</div>
+								</td>
+								<td>
+									qwe
+								</td>
+								<td>
+									asdasd
+								</td>
+								<td>
+									<span class='icon cancel'></span>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 				
-				<div class='pink'>
-					<div class='black1'>
-						Title 2
-					</div>
-					<div class='black2'>
-						<div class='center'>
-							<img src='images/1.jpg' />
-						</div>
-					</div>
-				</div>
-				<div class='pink'>
-					<div class='black1'>
-						Title 3
-					</div>
-					<div class='black2'>
-						<div class='center'>
-							<img src='images/2.jpg' />
-						</div>
-						<div>
-							<span>Bob1</span>
-							<span>B2</span>
-							<span>test 3</span>
-							<input type='button' value='отправить' />
-							<input type='radio' name='test' />
-						</div>
-					</div>
-				</div>
-				
-				<div class='pink'>
-					<img src='images/1.jpg' class='preview' />
-					<img src='images/2.jpg' class='preview' />
-					<img src='images/3.jpg' class='preview' />
-				</div>
 			</div>
 			<div class='right-block'>
 				<img src='images/adv1.jpg'/>
@@ -111,9 +806,14 @@
 							<img src='images/avatar2.jpg' />
 						</div>
 						<div>
-							<p>
-								Ivanov
-							</p>
+							<div class='editable'>
+								<span class='view'>Ivanov</span>
+								<div class='edit'>
+									<input class='newValue' />
+									<span class='icon add'></span>
+									<span class='icon cancel'></span>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div>
@@ -142,5 +842,16 @@
 					</div>
 				</div>
 		</div>
+		<div class='popup-block'>
+			<div class='popup-center'>
+				<div class='popup-background'></div>
+				<div class='popup-content'>
+					<a class='close'>close</a>
+					Очень важная информация. Ну очень. Кидай деньги в монитор
+					<img style='width:500px;' src='https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/112067639/original/6303c51d9bbea596ca27b6f31f7760f77240a137/draw-anime-girl-for-your-visual-novel.png' />
+				</div>
+			</div>
+		</div>
+		
 	</body>
 </html>

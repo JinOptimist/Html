@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	$(".close").click(function(){
-		$(this).closest(".popup-block").hide();
+		$(".popup-block").hide(400);
+	});
+	
+	$(".logo").click(function(){
+		$(".popup-block").show(300);
 	});
 	
 	$(".content").on('click', '.spoiler-block .title', function (){
@@ -38,7 +42,7 @@ $(document).ready(function(){
 	$(".content").on('click', '.add-user-card', function (){
 		var userCard = $('.user-card.template').clone();
 		userCard.removeClass('template');
-		$('.content').append(userCard);
+		$('.user-cards').append(userCard);
 	});
 	
 	$(".content").on('click', '.remove-user-card', function (){
