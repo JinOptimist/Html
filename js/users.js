@@ -7,9 +7,10 @@ $(document).ready(function(){
 		$(".popup-block").show(300);
 	});
 	
-	$(".content").on('click', '.spoiler-block .title', function (){
+	$(".spoiler-block .title").click(function (){
 		$(this).closest('.spoiler-block').find('.big-text').toggle(100);;
 	});
+
 
 	$(".content").on('click', '.font-size-add', function(){
 		var cardDiv = $(this).closest('.user-card');
