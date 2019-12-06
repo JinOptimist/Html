@@ -465,6 +465,14 @@ table tr td:nth-child(3n + 1){
 	color:red;
 }
 
+.tip{
+	display: none;
+	position: absolute;
+	background: #ccc;
+}
 
+.persone:hover .tip{
+	display: block;
+}
 
 
