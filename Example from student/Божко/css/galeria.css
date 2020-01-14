@@ -1,0 +1,21 @@
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1100px;
+    justify-content: space-around;
+}
+
+.galeria-item img {
+    width: 290px;
+    height: 195px;
+}
+
+.galeria-item {
+    height: fit-content;
+    background-color: #688dd8;
+}
+
+.galeria-likes {
+    text-align: center;
+}

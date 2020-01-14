@@ -1,0 +1,34 @@
+#tableInfo {
+  width: 100%;
+}
+
+#tableInfo table {
+  width: 100%;
+  border: 1px red solid;
+}
+/*
+.center-block > div{
+	display: none;
+}
+
+.center-block > div:target{
+	display: block;
+}
+*/
+#tableInfo tr:first-child,
+#tableInfo tr:last-child {
+  font-size: 30px;
+}
+
+#tableInfo tr:nth-child(3n-1){
+    background: grey;
+}
+#tableInfo td:nth-child(3n){
+  background:pink;
+
+#tableInfo td:first-child{
+    border-right:2px dotted green ;
+}
+#tableInfo td:last-child {
+    border-left:2px solid red ;
+}

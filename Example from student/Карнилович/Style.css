@@ -1,0 +1,442 @@
+header{
+	display: flex;
+	justify-content: space-around;
+  border: 1px solid silver;
+  padding: 15px;
+	margin: 5px;
+  background-image: url(images/background.jpg);
+  background-color: #c7b39b;
+}
+
+header img{
+	max-width: 250px;
+	max-height: 100px;
+  border-radius: 5px;
+
+}
+
+header.title{
+  display:flex;
+  font-size: 200px;
+
+}
+.glavnoe{
+  font-size: 100px;
+  font-family: serif;
+  font-style: oblique;
+  color:white;
+}
+
+
+
+.center-block{
+  background-color: white;
+  background-image: url(images/background.jpg) ;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid silver;
+  padding: 5px;
+  margin: 5px;
+	min-height: 600px;
+
+}
+
+.left-menu{
+
+	position:  fixed;
+	left:10px;
+	width: 200px;
+  background-color:  rgba(0, 0, 0, 0.0);
+  padding: 1px;
+  margin: 1px;
+}
+.left-menu .menu{
+	display: none;
+}
+
+.left-menu > .menu{
+	display: block;
+}
+
+.left-menu .menu-item:hover > .menu{
+	display: block;
+}
+
+.menu{
+	list-style: none;
+	width:60px
+}
+.menu .menu{
+	position: absolute;
+    margin-left: 60px;
+    padding-left: 0;
+	background: green;
+}
+.left-menu img{
+	max-width: 50px;
+	max-height: 50px;
+}
+.content{
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+.history{
+
+
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+.user-card{
+	width: 200px;
+    border: 1px solid silver;
+	padding: 10px;
+	margin: 5px;
+  border-radius: 8px;
+	max-height: 300px;
+}
+
+.user-card .header{
+	display: flex;
+}
+
+.user-card .header p{
+    margin: 4px;
+}
+
+.user-card .header img{
+	max-width: 50px;
+	max-height: 50px;
+	border-radius: 40px;
+}
+
+.right-block{
+	width: 250px;
+  background-color:  rgba(0, 0, 0, 0.0);
+  padding: 10px;
+  margin: 10px;
+
+
+
+}
+
+.right-block img{
+	max-width: 250px;
+
+
+}
+.truck img{
+	max-width: 250px;
+}
+.truck-text{
+	display: none;
+	position:absolute;
+	background: white;
+}
+.truck:hover .truck-text{
+	display:block;
+}
+.universal img{
+	max-width: 250px;
+}
+.universal-text{
+	display: none;
+	position:absolute;
+	background: white;
+}
+.universal:hover .universal-text{
+	display:block;
+}
+
+.footer{
+
+  height: 200px;
+  border: 1px solid silver;
+  background-color: red;
+  padding: 30px;
+  margin: 5px;
+}
+.my-cool-button:hover{
+	border: 0;
+    padding: 0;
+    margin: 0;
+    background: gray;
+    width: 26px;
+
+}
+.my-cool-button:active{
+	background: black;
+}
+.tag-block{
+	padding: 10px;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.tag{
+	border: 1px green solid;
+	border-radius: 15px;
+	padding: 2px 4px 2px 7px;
+}
+
+.tag .remove{
+	visibility: hidden;
+}
+
+.tag:hover .remove{
+	visibility: visible;
+}
+
+.spoiler-block{
+	border: 1px gray solid;
+	border-radius: 5px;
+}
+
+.spoiler-block .title{
+	cursor: pointer;
+}
+
+.spoiler-block .big-text{
+	border-top: 1px gray solid;
+}
+
+.spoiler-block  p{
+	padding: 7px;
+    margin: 0;
+}
+
+
+.template{
+	display: none;
+}
+
+.preview{
+	max-width: 100px;
+}
+
+.full-size{
+	max-width: 500px;
+}
+
+.add-user-card{
+	cursor: pointer;
+	height: fit-content;
+}
+
+.edit{
+	display: flex;
+}
+.newValue{
+	width: 100%;
+    flex: 1;
+}
+
+.icon{
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.icon.add{
+	background-image:url(images/add.jpg);
+}
+
+
+.icon.cancel{
+	background-image:url(images/cancel.png);
+}
+.icon.like{
+	background-image:url(images/icon-like.png);
+	display:inline-block;
+}
+
+.icon.eye{
+	background-image:url(images/icon-eye.png);
+	display:inline-block;
+}
+.popup-block{
+	width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    top: 0;
+	left: 0;
+}
+
+.popup-center{
+	align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.popup-background{
+	width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: 0.3;
+    position: absolute;
+	z-index: 0;
+}
+
+.popup-content{
+	width: 600px;
+    height: 300px;
+    background: #FFF;
+	z-index: 1;
+}
+#tableInfo{
+	width:100%
+}
+
+#tableInfo table{
+
+	border: 1px red solid;
+	width:100%
+}
+
+table tr:last-child{
+	font-weight: bold;
+	font-size: 30px;
+}
+table tr td:first-child{
+	border-right: 3px solid green;
+}
+table tr td:last-child{
+	border-left: 3px solid red;
+}
+table tr:nth-child(2n+2){
+	background:gray;
+}
+table tr td:nth-child(3n+3){
+	background:pink;
+}
+
+.left-menu-ninja{
+	width: 200px;
+}
+.left-menu{
+	position: fixed;
+    width: 50px;
+    overflow: hidden;
+    background: #rgba(0, 0, 0, 0.0);
+	height: 100vh;
+    top: 0;
+	border: 1px white solid;
+}
+
+.left-menu:hover{
+	width: 150px;
+}
+
+.left-menu img{
+	max-width: 50px;
+	max-height: 50px;
+	cursor: pointer;
+}
+
+.left-menu div{
+	margin-top: 10px;
+    font-size: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.left-menu div:first-child{
+	margin-top: 0;
+}
+
+.left-menu a{
+	white-space: nowrap;
+	color: #fff;
+	display: flex;
+    align-items: center;
+	text-decoration: none;
+}
+
+
+.images{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.images .image{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px red solid;
+    margin: 5px;
+	width: calc(300px + 20px);
+    height: calc(300px + 120px);
+
+}
+
+.images .image img{
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.images .image.full-view{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	margin:0;
+}
+
+.images .image.full-view .cover{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #000;
+	opacity: 0.5;
+	z-index: 0;
+}
+.images .image.full-view .image-block{
+	z-index: 1;
+}
+.images .image.full-view img{
+	max-width: calc(100% - 50px);
+    max-height: calc(100vh - 50px);
+}
+
+.image-block{
+	background: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.image-block h3{
+	text-align: center;
+}
+
+.image-block .image-container{
+	display: flex;
+	justify-content: center;
+}
+
+.image-block .footer{
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+}
+
+.image-block .footer span{
+	display: flex;
+    align-items: center;
+}
+
+.images .image.full-view .image-block h3{
+	display: none;
+}
+
+.images .image.full-view .image-block .footer span{
+	color: blue;
+}

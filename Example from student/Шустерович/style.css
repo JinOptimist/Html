@@ -1,0 +1,263 @@
+body {
+  /*background: ForestGreen url(images/fon6.jpg); 
+	background-size: cover;*/
+	 background: ForestGreen ;
+}
+
+
+.black1{	
+	display: flex;
+	justify-content: space-between;               
+}
+
+h1.my-header{
+	font-size:50px;
+	font-family:initial;
+	font-style:italic;
+}
+
+.left-menu{
+	justify-content: space-between;
+	border: 1px solid #9ed30e; /* Рамка */
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #9ed30e; 
+	width: 300px;
+	
+}
+
+
+ul ul{
+	position:absolute;
+	margin-left: 50px;
+	list-style: none;
+}
+
+ul{
+	width: 100px;
+	/*display: inline;*/
+}
+
+li{
+	background: #9ed30e;
+}
+
+.left-menu a:hover{
+	box-shadow:2px -2px rgba(255, 255, 255, 0.5);
+}
+
+.left-menu a:active{
+	box-shadow:inset 0 0 6px;
+}
+
+.left-menu ul{
+	display: none;
+}
+
+.left-menu > ul{
+	display: block;
+}
+
+.left-menu ul li:hover> ul{
+	display: block;
+}
+
+a{
+	border: 1px ForestGreen solid;
+	border-radius: 15px;
+	padding: 2px 4px 2px 7px;
+	box-shadow: 2px -2px ForestGreen; 
+	background: transparent;
+	display:block;
+    cursor:pointer;
+}
+
+.black2{
+	border: 1px solid #9ed30e;
+	display: flex;
+    justify-content: space-between;
+	
+}
+
+.black2 div{	
+	margin: 5px;
+}
+
+.black2 div img{
+	max-height: 300px;
+	max-width: 300px;
+	border-radius: 150px;
+}
+
+.black2 div span{
+	border-radius: 10px;
+	white-space: nowrap;	 
+	}
+
+.myspecail img{
+	max-width: 200px;
+	max-height: 300px;	
+	justify-content: left;
+	}
+     	
+.footer{
+	display: flex;
+    justify-content: center;	
+	margin: 5px;
+}
+
+.article{
+	border: 1px solid #9ed30e;
+}
+
+hr{
+color: #82c3c5;
+width:100%;
+height:0px;
+}
+
+.ramka {
+border:0px solid;
+}	
+
+
+.left-right{
+	display: flex;
+}
+
+.tag-block{
+	padding: 10px;
+}
+
+.tag{
+	border: 1px green solid;
+	border-radius: 15px;
+	padding: 2px 4px 2px 7px;
+}
+
+.tag .remove{
+	visibility: hidden;
+}
+.tag:hover .remove{
+	visibility: visible;
+}
+
+.logo {
+	background:#9ed30e;
+	border-radius:10px;
+}
+
+.logo img{
+	max-width: 100px;
+	max-height:60px;
+	
+}
+
+.popup-block img{
+	max-width: 745px;
+	max-height:418px;
+}
+
+.popup-block {
+	width:100%;
+	height:100vh;
+	position:fixed;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	top: 0;
+	left: 0;
+}
+	
+.popup-background{
+	width:100%;
+	height:100vh;
+	background:cyan;
+	opacity: 0.3;
+	position: absolute;
+	z-index: 0;
+}
+
+.popup-center{
+	width:745px;
+	height:440px;
+    background:#bf946a;
+    z-index: 1;
+}
+
+#tableInfo table{
+	width:100%;
+	border:1px #9ed30e solid;
+}
+
+table tr td:first-child {
+	background:#9ed30e;
+}
+
+td:last-child {
+	border-left:3px solid red;
+}
+
+td:first-child {
+	border-right:3px solid red;
+}
+
+table tr:nth-child(2n){
+	background:fcc9aa;
+}
+
+table tr:nth-child(2n+3){
+	background:#fbe8b0;
+}
+
+td:nth-child(2n+1){
+	background:#feeb9e;
+} 
+
+tr:nth-child(1) td{
+	background:#9ed30e;
+} 
+
+table tr:first-child td{
+font-weight:bold;
+font-size:18px;
+}
+
+.popup-block-show-hide{
+	display:none;
+}
+
+.left-right .tips{
+	display: none;
+	position: fixed;
+	background: #9ed30e;
+	border-radius: 10px;
+}
+.left-right:hover .tips{
+	display: block;
+}
+
+.big-text{
+	display:none;
+}
+
+.spoiler-block{
+	font-weight:bold;
+}
+
+.close{
+	background: LightYellow;
+	font-weight:bold;
+	width:50px;
+	height:20px;
+}
+
+.icon.add{
+	background-image:url(slider/значок.jpg);
+}
+
+.icon.cancel{
+	background-image:url(slider/значок2.png);
+}
+

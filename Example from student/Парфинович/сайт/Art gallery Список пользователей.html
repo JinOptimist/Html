@@ -1,0 +1,838 @@
+<html>
+
+<head>
+    <title>Art Gallery</title>
+    <link rel='stylesheet' href='Стили.css' />
+    <script src='jquery.min.js'></script>
+    <script src='Java.js'></script>
+    <script src='fast-edit.js'></script>
+</head>
+
+<body>
+        <div class='popup-block'>
+                <div class='popup'>
+                    <div class='popup-background'>
+                    </div>
+                    <div class='popup-inform'>
+                        <div class='close'>
+                            <span class='popup-close button'></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class='header'>
+        <!--шапка сайта-->
+        <div class='logo'>
+            <!--Логотип-->
+            <a href='Сайт.html'>
+                <img src='1460978817_palette_brush.png' />
+            </a>
+
+        </div>
+        <div class='name'>
+            <!--Название сайта-->
+            <div class='fullname'>
+                    
+                <span class="box-hint">
+                    <h1>
+                        Art Gallery
+                        <div class="hint">
+                            <div><img src='1460978817_palette_brush.png' /></div>
+                            <div>
+                                <p>Пользователь...</p>
+                                <p>Зарегистрирован...</p>
+                                <p>Lorem </p>
+                            </div>
+                        </div>
+                </span>
+                </h1>
+            </div>
+
+
+        </div>
+
+        <div class='headuser'>
+            <!--Информация пользователя-->
+            <div class='foto'>
+                <img src='9276BP9P5E7OqGBipY81LYxN.jpg' />
+            </div>
+            <div class='userinfo'>
+                <p><span>Имя</span><span>:</span></p>
+                <p><span>Пол</span><span>:</span></p>
+                <p><span>Возраст</span><span>:</span></p>
+            </div>
+            <div class='headname'>
+                <p>Parfinovich Darya</p>
+                <p>Женский</p>
+                <p>25</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class='centr'>
+        <div class='menu'>
+            <div class='short-menu'>
+                <div class='menu-image'>
+                    <img class='menuImage Hamburger' src='Hamburger.png' />
+                </div>
+                <div class='menu-image'>
+                    <img class='menuImage' src='ДОМ.png' />
+                    <div class='description'> <a href='Сайт.html'>Home page</a></div>
+                </div>
+                <div class='menu-image'>
+                    <img class='menuImage' src='настройки.png' />
+                    <div class='description'>Settings</div>
+                    <div class='list'>
+                        <div class='menu-image'>
+                            <div class='description'>
+                                <a href='#'>visit history</a>
+                            </div>
+                            <div class='list'>
+                                <div class='menu-image'>
+                                    <div class='description'>
+                                        <a href='#'>Last day</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='menu-image'>
+                            <div class='description'>
+                                <a href='#'>Order history</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='menu-image'>
+                    <img class='menuImage' src='контакты.png' />
+                    <div class='description'>Contacts</div>
+                </div>
+                <div class='menu-image'>
+                    <img class='menuImage' src='Месторасполажение.png' />
+                    <div class='description'><a href='https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%93%D1%80%D0%BE%D0%BC%D0%BE%D0%B2%D0%B0+28,+%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8524667,27.4404285,17z/data=!3m1!4b1!4m5!3m4!1s0x46dbda6ff02eee47:0xe498e3b178d5488!8m2!3d53.8524667!4d27.4426172'>Местоположение</a></div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'> <a href="#old">Old</a></div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'><a href="#table">Таблица</a></div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'><a href="#gallery">Gallery</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class='content'>
+            <!--контент-->
+            <div class="center-block">
+                <div id="old">
+                    <!--<h1>Пользователи</h1>-->
+                    <div class='users'>
+
+                        <div class='newuser'>
+                            <span class='add-user button' type="button"></span>
+                        </div>
+
+                        <div class='user'>
+                            <div class='top'>
+                                <div class='foto'>
+                                    <img src='милая-панда-шаржа-с-наушниками.jpg' />
+                                </div>
+                                <!--Конец foto-->
+                                <div class='username'>
+                                    <p><span>Имя</span><span>:</span></p>
+                                    <p><span>Пол</span><span>:</span></p>
+                                    <p><span>Возраст</span><span>:</span></p>
+                                </div>
+                                <!--конец username-->
+                                <div class='nameuser1'>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>Mary</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>Женский</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>20</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--конец header 1-->
+                            <div class='klik'>
+                                <span class='plus button'></span>
+                                <span class='minus button'></span>
+                                <span class='delete button'></span>
+                            </div>
+                            <!--конец klik-->
+                            <div class='spoiler'>
+                                <div class='spoiler-main'>
+                                    <p>Основная информация о пользователе:</p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>
+                                                    <li>Активный отдых на природе</li>
+                                                </span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>
+                                                    <li>Посещение кино, музеев, выставок</li>
+                                                </span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class='spoiler-hidden'>
+                                    <ul>
+                                        <p>Xобби и увлечения:</p>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--конец Table-->
+                            <div class='tags'>
+
+                                <span class='tag'>Interests<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Religion<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Music<a class="remove" href='#'><img src="cancel.png"></a></span>
+                            </div>
+                            <!--Конец tegs-->
+                            <div class='new-tag'>
+                                <span><input class='newtext' /></span>
+                                <span class='icon add-tag' type="button"></span>
+
+                            </div>
+                            <!--Конец teg4-->
+
+                        </div>
+                        <!--Конец user1-->
+
+
+                        <div class='user'>
+                            <div class='top'>
+                                <div class='foto'>
+                                    <img src='лягушка-с-наушниками-58755757.jpg' />
+                                </div>
+                                <!--Конец foto-->
+                                <div class='username'>
+                                    <p><span>Имя</span><span>:</span></p>
+                                    <p><span>Пол</span><span>:</span></p>
+                                    <p><span>Возраст</span><span>:</span></p>
+                                </div>
+                                <!--конец username-->
+                                <div class='nameuser1'>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>Jimy</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>Мужской</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>29</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--конец header 2-->
+                            <div class='klik'>
+                                <span class='plus button'></span>
+                                <span class='minus button'></span>
+                                <span class='delete button'></span>
+                            </div>
+                            <!--конец klik-->
+                            <div class='spoiler'>
+                                <div class='spoiler-main'>
+                                    <p>Основная информация о пользователе:</p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>
+                                                    <li>Активный отдых на природе</li>
+                                                </span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>
+                                                    <li>Посещение кино, музеев, выставок</li>
+                                                </span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class='spoiler-hidden'>
+                                    <ul>
+                                        <p>Xобби и увлечения:</p>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--конец Table-->
+                            <div class='tags'>
+
+                                <span class='tag'>Interests<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Religion<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Music<a class="remove" href='#'><img src="cancel.png"></a></span>
+                            </div>
+                            <!--Конец tegs-->
+                            <div class='new-tag'>
+                                <span><input class='newtext' /></span>
+                                <span class='icon add-tag' type="button"></span>
+
+                            </div>
+                            <!--Конец teg4-->
+                        </div>
+                        <!--Конец user2-->
+
+                        <div class='user'>
+                            <div class='top'>
+                                <div class='foto'>
+                                    <img src='кот в наушниках.jpg' />
+                                </div>
+                                <!--Конец foto-->
+                                <div class='username'>
+                                    <p><span>Имя</span><span>:</span></p>
+                                    <p><span>Пол</span><span>:</span></p>
+                                    <p><span>Возраст</span><span>:</span></p>
+                                </div>
+                                <!--конец username-->
+                                <div class='nameuser1'>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>Sam</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>Женский</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>35</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--конец header 3-->
+                            <div class='klik'>
+                                <span class='plus button'></span>
+                                <span class='minus button'></span>
+                                <span class='delete button'></span>
+                            </div>
+                            <!--конец klik-->
+                            <div class='spoiler'>
+                                <div class='spoiler-main'>
+                                    <p>Основная информация о пользователе:</p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>
+                                                    <li>Активный отдых на природе</li>
+                                                </span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>
+                                                    <li>Посещение кино, музеев, выставок</li>
+                                                </span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class='spoiler-hidden'>
+                                    <ul>
+                                        <p>Xобби и увлечения:</p>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--конец Table-->
+                            <div class='tags'>
+
+                                <span class='tag'>Interests<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Religion<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Music<a class="remove" href='#'><img src="cancel.png"></a></span>
+                            </div>
+                            <!--Конец tegs-->
+                            <div class='new-tag'>
+                                <span><input class='newtext' /></span>
+                                <span class='icon add-tag' type="button"></span>
+
+                            </div>
+                            <!--Конец teg4-->
+                        </div>
+
+                        <div class='user'>
+                            <div class='top'>
+                                <div class='foto'>
+                                    <img src='ежик в наушниках.jpg' />
+                                </div>
+                                <!--Конец foto-->
+                                <div class='username'>
+                                    <p><span>Имя</span><span>:</span></p>
+                                    <p><span>Пол</span><span>:</span></p>
+                                    <p><span>Возраст</span><span>:</span></p>
+                                </div>
+                                <!--конец username-->
+                                <div class='nameuser1'>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>Jack</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>Мужско</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>35</span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--конец header 4-->
+                            <div class='klik'>
+                                <span class='plus button'></span>
+                                <span class='minus button'></span>
+                                <span class='delete button'></span>
+                            </div>
+                            <!--конец klik-->
+                            <div class='spoiler'>
+                                <div class='spoiler-main'>
+                                    <p>Основная информация о пользователе:</p>
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>
+                                                    <li>Активный отдых на природе</li>
+                                                </span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+
+                                    <p>
+                                        <div class='editable'>
+                                            <span class='view'>
+                                                    <li>Посещение кино, музеев, выставок</li>
+                                                </span>
+                                            <div class='edit'>
+                                                <input class='newValue' />
+                                                <span class='icon add'></span>
+                                                <span class='icon cancel'></span>
+                                            </div>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class='spoiler-hidden'>
+                                    <ul>
+                                        <p>Xобби и увлечения:</p>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--конец Table-->
+                            <div class='tags'>
+
+                                <span class='tag'>Interests<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Religion<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Music<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                            </div>
+                            <!--Конец tegs-->
+                            <div class='new-tag'>
+                                <span><input class='newtext' /></span>
+                                <span class='icon add-tag' type="button"></span>
+
+                            </div>
+                            <!--Конец teg4-->
+                        </div>
+
+
+
+                        <!--шаблон пользователя-->
+                        <div class='new-user template'>
+                            <div class='top'>
+                                <div class='foto'>
+                                    <img src='ежик в наушниках.jpg' />
+                                </div>
+                                <!--Конец foto-->
+                                <div class='username'>
+                                    <p><span>Имя</span><span>:</span></p>
+                                    <p><span>Пол</span><span>:</span></p>
+                                    <p><span>Возраст</span><span>:</span></p>
+                                </div>
+                                <!--конец username-->
+                            </div>
+                            <!--конец header 4-->
+                            <div class='klik'>
+                                <span class='plus button'></span>
+                                <span class='minus button'></span>
+                                <span class='delete button'></span>
+                            </div>
+                            <!--конец klik-->
+                            <div class='spoiler'>
+                                <div class='spoiler-main'>
+                                    <ul>
+                                        <p>Основная информация о пользователе:</p>
+                                        <li>Активный отдых на природе</li>
+                                        <li>Посещение кино, музеев, выставок</li>
+                                    </ul>
+                                </div>
+                                <div class='spoiler-hidden'>
+                                    <ul>
+                                        <p>Xобби и увлечения:</p>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--конец Table-->
+                            <div class='tags'>
+                                <span class='tag'>Interests<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Religion<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                                <span class='tag'>Music<a class="remove" href='#'><img src="cancel.png"></a></span>
+
+                            </div>
+                            <!--Конец tegs-->
+                            <div class='new-tag'>
+                                <span><input class='newtext' /></span>
+                                <span class='add-tag icon' type="button"></span>
+
+                            </div>
+                            <!--Конец teg4-->
+                        </div>
+                        <!--конец шаблона пользователя-->
+                        <!--Шаблон тега-->
+                        <span class='tag template'>
+                                <span class='tag-name'></span>
+                        <a class='remove' href='#'><img src="cancel.png"></a>
+                        </span>
+
+                        
+
+
+                    </div>
+                    <!--Конец пользователей-->
+                </div>
+            </div>
+            <div class="center-block">
+                <div id="table">
+                    <h1>Таблица</h1>
+                    <table class="tableStyle">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>***</td>
+                            <td>///</td>
+                            <td>---</td>
+                            <td>===</td>
+                            <td>+++</td>
+                        </tr>
+                        <tr>
+                            <td>***</td>
+                            <td>///</td>
+                            <td>---</td>
+                            <td>===</td>
+                            <td>+++</td>
+                        </tr>
+                        <tr>
+                            <td>***</td>
+                            <td>///</td>
+                            <td>---</td>
+                            <td>===</td>
+                            <td>+++</td>
+                        </tr>
+                        <tr>
+                            <td>***</td>
+                            <td>///</td>
+                            <td>---</td>
+                            <td>===</td>
+                            <td>+++</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="center-block">
+                <div id="gallery">
+                    <div class="gallery">
+                        <div class="container-image">
+                            <div class="cover"></div>
+                            <div class="image-box">
+
+                                <h3>Abstraction №1</h3>
+
+                                <div class="gallery-image">
+                                    <img src="Абстракция1.jpg" />
+                                </div>
+                                <div class="looks">
+                                    <span><span class='eye'></span>250</span>
+                                    <span><span class='like'></span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <div class="cover"></div>
+                            <div class="image-box">
+
+                                <h>Abstraction №2</h>
+
+                                <div class="gallery-image">
+                                    <img src="Абстракция2.jpg" />
+                                </div>
+                                <div class="looks">
+                                    <span><span class='eye'></span>250</span>
+                                    <span><span class='like'></span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <div class="cover"></div>
+                            <div class="image-box">
+
+                                <h>Abstraction №3</h>
+
+                                <div class="gallery-image">
+                                    <img src="Абстракция3.jpg" />
+                                </div>
+                                <div class="looks">
+                                    <span><span class='eye'></span>250</span>
+                                    <span><span class='like'></span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <div class="cover"></div>
+                            <div class="image-box">
+
+                                <h>Abstraction №4</h>
+
+                                <div class="gallery-image">
+                                    <img src="Абстракция4.jpg" />
+                                </div>
+                                <div class="looks">
+                                    <span><span class='eye'></span>250</span>
+                                    <span><span class='like'></span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <div class="cover"></div>
+                            <div class="image-box">
+
+                                <h>Abstraction №5</h>
+
+                                <div class="gallery-image">
+                                    <img src="Абстракция5.jpg" />
+                                </div>
+                                <div class="looks">
+                                    <span><span class='eye'></span>250</span>
+                                    <span><span class='like'></span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <div class="cover"></div>
+                            <div class="image-box">
+
+                                <h>Abstraction №6</h>
+
+                                <div class="gallery-image">
+                                    <img src="Абстракция6.jpg" />
+                                </div>
+                                <div class="looks">
+                                    <span><span class='eye'></span>250</span>
+                                    <span><span class='like'></span>100</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-image">
+                            <div class="cover"></div>
+                            <div class="image-box">
+
+                                <h>Abstraction №7</h><!--Changes-->
+                                
+                                <span class="box-hint">
+                                    <div class="gallery-image">
+                                        <img src="Абстракция7.jpg" />
+                                    </div>
+
+                                    <div class="hint">
+                                        <div><img src='абстракция 7 подсказка.jpg' /></div>
+                                        <div>
+                                            <p>ОЧЕНЬ</p>
+                                            <p>КРАСИВАЯ</p>
+                                            <p>ДЕВУШКА </p>
+                                        </div>
+                                    </div>
+                                    </span>
+
+
+                                    <div class="looks">
+                                        <span><span class='eye'></span>250</span>
+                                        <span><span class='like'></span>100</span>
+                                    </div>
+</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Конец контента-->
+
+
+        <div class='news'>
+            <!--блок новостей-->
+            <div class='event' title="Выставка «Якоб Йорданс. Картины и рисунки из собраний России»">
+                <a href='https://kuda-spb.ru/event/vystavka-jakob-jordans-kartiny-i-risunki-iz-sobranij-rossii/'>
+                    <img src='326524bcc25d97a680b08b94debdd0f9.jpg' />
+                </a>
+            </div>
+        
+            <div class='event' title="Выставка «Якоб Йорданс. Картины и рисунки из собраний России»">
+                <a href='https://nsn.fm/society/society-vystavka-v-manezhe-rasskazhet-o-budushhem-rossii'>
+                    <img class='events' src='ee95c3488c206c89f7e2475310101d52.jpg' />
+                </a>
+            </div>
+            <div class='event' title="Выставка «Якоб Йорданс. Картины и рисунки из собраний России»">
+                <a href='http://folc.ru/vystavka-sovremennye-mastera-dekorativno-prikladnyh-iskusstv-rossii/'>
+                    <img class='events' src='3a3523ba03f2bcaaf0bedcaa688d3836.jpg' />
+                </a>
+            </div>
+            <div class='event' title="Выставка «Якоб Йорданс. Картины и рисунки из собраний России»">
+                <a href='https://www.nowodvorski-online.ru/company/news/2019/vystavka_mosbuild_2019_v_moskve_/'>
+                    <img class='events' src='IMG_0030.jpg' />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class='footer'>
+        <!--низ сайта-->
+
+        <a href='Сайт.html'>
+            &#169 Art Gallery, 2019
+        </a>
+        <ul>
+            <p><b>Адрес</b></p>
+            <p>г.Минск, ул.Громова д.28</p>
+        </ul>
+    </div>
+</body>

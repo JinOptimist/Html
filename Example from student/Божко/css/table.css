@@ -1,0 +1,59 @@
+#tableInfo h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr td {
+    border: 1px rgb(78, 78, 78) solid;
+}
+
+table tr:first-child {
+    font-size: 20px;
+}
+
+table tr:last-child {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+table tr td:first-child {
+    border-right: 3px green solid;
+    border-left: 3px green solid;
+}
+
+table tr td:last-child {
+    border-left: 3px red solid;
+    border-right: 3px red solid;
+    text-align: center;
+}
+
+table tr td:nth-child(3n) {
+    background: #cac;
+}
+
+table tr:nth-child(odd) {
+    background: rgb(139, 139, 139);
+}
+
+table tr:first-child {
+    background: transparent;
+}
+
+#first-table-td {
+    border-top: 3px green solid;
+}
+
+#last-table-td {
+    border-bottom: 3px green solid;
+}
+
+#first-table-td-red {
+    border-top: 3px red solid;
+}
+
+#last-table-td-red {
+    border-bottom: 3px red solid;
+}

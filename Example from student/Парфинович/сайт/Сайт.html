@@ -1,0 +1,189 @@
+<html>
+
+<head>
+    <title>Art Gallery</title>
+    <link rel='stylesheet' href='Стили.css' />
+    <script src='jquery.min.js'></script>
+    <script src='Java.js'></script>
+    <script src='fast-edit.js'></script>
+</head>
+
+<body>
+    <div class='header'>
+        <!--шапка сайта-->
+        <a href='Сайт.html'>
+            <img src='1460978817_palette_brush.png' />
+        </a>
+        <h1> Art Gallery
+        </h1>
+        <ul>Контакты: +375(29)378-97-71
+            <p>Режим работы:</p>
+            <li> пн-пт: 10.00-20.00;</li>
+            <li> сб-вс: 11.00-17.00.</li>
+
+        </ul>
+    </div>
+
+    <div class='centr'>
+        <div class='menu'>
+            <!--меню-->
+            <div class='short-menu'>
+                <div class='menu-image'>
+                    <img class='menuImage Hamburger' src='Hamburger.png' />
+                    <div class='description'> <a href=#>Товары по категориям</a></div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'><a href='Art gallery Список пользователей.html'>Список пользователей</a>
+                    </div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'><a href='http://artstore.by/kraski-hudozhestvenye/'>Краски художественные</a>
+                    </div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'><a href='http://artstore.by/kisti-mastihiny/'>Кисти, мастихины</a>
+                    </div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'><a href='http://artstore.by/bumaga-i-karton/'>Бумага, холсты, подрамники</a>
+                    </div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'><a href='http://artstore.by/gipsovye-izdelija/'>Гипсовые изделия</a>
+                    </div>
+                </div>
+                <div class='menu-image'>
+                    <div class='description'><a href='http://artstore.by/rospis-po-steklu-i-keramike/'>Роспись по стеклу и керамике</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='content'>
+            <!--контент-->
+            <h1> Информация для покупателя
+            </h1>
+            <p>Способы доставки</p>
+            <ul>
+                <li>Самовывоз
+                    <p>По предварительному заказу. На следующий рабочий день после подтверждения заказа покупателем. Так как физической точки продажи нет, место самовывоза определяется по телефону нашим оператором.</p>
+                </li>
+                <li>Доставка курьером по г.Минску до МКАД (бесплатно при заказе от 99,9руб)
+                    <p>Стоимость доставки 6 руб. Заказ на сумму свыше 100 руб. доставляется бесплатно.Стоимость доставки в белорусских рублях (BYN): при покупке на сумму до 99.9 рублей - 6 рублей. При покупке свыше 99.9 рублей - доставка бесплатно</p>
+                </li>
+                <li>Доставка почтой по Беларуси
+                    <p>Стоимость доставки за счет получателя по фиксированным тарифам РУП Белпочта на дату отправки (до 1 кг - 4 руб. 32.коп., от 1 до 3 кг - 8 руб. 22 коп., от 3 до 15 кг - 10 руб. 92 коп.). Отправка заказов почтой по Беларуси осуществляется
+                        каждую среду и пятницу и составляет 2-4 рабочих дней с даты отправления.
+                    </p>
+                </li>
+                <li>Доставка курьером по Беларуси, кроме г. Минска (по согласованию)
+                    <p>Доставка транспортной компанией по Беларуси, за исключением города Минска, возможна по согласованию. Стоимость рассчитывается индивидуально, в зависимости от веса и габаритов груза. Доступна оплата товара курьеру наличными при получении
+                        либо предоплата товара в системе ЕРИП.
+                    </p>
+                </li>
+                <li>Доставка почтой за пределы Республики Беларусь
+                    <p>Отправка заказов осуществляется по тарифам РУП "Белпочта" на условиях 100% предоплаты на расчетный счет. Подробнее: https://4art.by/delivery_info
+                    </p>
+                </li>
+            </ul>
+            <div class='form'>
+                <!--Анкета-->
+
+                <h1>
+                    Анкета покупателя
+                </h1>
+                <div class='profile'>
+
+                    <div class='first-part'>
+                        <form name="form" action="" method="post">
+                            <p><b> 1.Ф.И.О <input type="text" name="att_2" value="" size="20"></b><br /></p>
+
+                            <p><b>2.Пол:</b></p>
+                            <p><input name="sex" type="radio" value="P1">Мужской
+                                <br>
+                                <input name="sex" type="radio" value="P2">Женский
+                                <br>
+                            </p>
+
+                            <p><b>3.Сколько лет:</b></p>
+                            <p><input name="years" type="radio" value="1">18-24<br>
+                                <input name="years" type="radio" value="2">24-34<br>
+                                <input name="years" type="radio" value="3">35-50<br>
+                                <input name="years" type="radio" value="4">больше 50<br></p>
+
+                            <p><b>4.Что привлекло Вас на нашем сайте?</b></p>
+                            <p><input name="att" type="checkbox" value="1">Удобный интерфейс<br> Акция (укажите какая)<input type="text" name="att_1" value="" size="20"><br /> Другое <input type="text" name="att_2" value="" size="20"><br /></p>
+
+                            <p><b>5.Нашли ли Вы то, что искали?</b></p>
+                            <input name="sub" type="radio" value="1">Да<br>
+                            <input name="sub" type="radio" value="2">Нет<br>
+                        </form>
+                    </div>
+
+                    <div class='second-part'>
+                        <form name="form" action="" method="post">
+                            <p><b>6. Откуда Вы узнали о наших услугах (можно указать несколько вариантов):</b></p>
+                            <input type="checkbox" name="service" value="1">Листовка в почтовом ящике <br />
+                            <input type="checkbox" name="service" value="2">Объявление на подъезде <br />
+                            <input type="checkbox" name="service" value="4">Звонок представителя<br />
+                            <input type="checkbox" name="service" value="5">Реклама в лифте<br />
+                            <input type="checkbox" name="service" value="6">Реклама в метро <br />
+                            <input type="checkbox" name="service" value="7">Реклама на радио<br />
+                            <input type="checkbox" name="service" value="8">Реклама на ТВ <br />
+                            <input type="checkbox" name="service" value="10">Реклама на улице (щиты, экраны в городе)<br />
+                            <input type="checkbox" name="service" value="12">Прочитал в социальных сетях в интернете<br />
+                            <input type="checkbox" name="service" value="13">Рекомендации знакомых<br /> Другое (просьба указать) <input type="text" name="service_1" value="" size="20"><br />
+                            <p><b> Если желаете зарегистрироваться на нашем сайте, заполните поля Логин и Пароль</b></p>
+                            <p><strong>Логин:</strong>
+                                <input maxlength="25" size="40" name="login"></p>
+                            <p><strong>Пароль:</strong>
+                                <input type="password" maxlength="25" size="40" name="password"></p>
+
+                            <p><input type="submit" value="Отправить"></p>
+                            <p> <input type="reset" value="Очистить"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--Конец анкеты-->
+
+        <!--Конец контента-->
+        <div class='news'>
+            <!--блок новостей-->
+           
+            <div class='event' title="Выставка «Якоб Йорданс. Картины и рисунки из собраний России»">
+                <a href='https://kuda-spb.ru/event/vystavka-jakob-jordans-kartiny-i-risunki-iz-sobranij-rossii/'>
+                    <img src='326524bcc25d97a680b08b94debdd0f9.jpg' />
+                </a>
+            </div>
+        
+            <div class='event' title="Выставка «Якоб Йорданс. Картины и рисунки из собраний России»">
+                <a href='https://nsn.fm/society/society-vystavka-v-manezhe-rasskazhet-o-budushhem-rossii'>
+                    <img class='events' src='ee95c3488c206c89f7e2475310101d52.jpg' />
+                </a>
+            </div>
+            <div class='event' title="Выставка «Якоб Йорданс. Картины и рисунки из собраний России»">
+                <a href='http://folc.ru/vystavka-sovremennye-mastera-dekorativno-prikladnyh-iskusstv-rossii/'>
+                    <img class='events' src='3a3523ba03f2bcaaf0bedcaa688d3836.jpg' />
+                </a>
+            </div>
+            <div class='event' title="Выставка «Якоб Йорданс. Картины и рисунки из собраний России»">
+                <a href='https://www.nowodvorski-online.ru/company/news/2019/vystavka_mosbuild_2019_v_moskve_/'>
+                    <img class='events' src='IMG_0030.jpg' />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class='footer'>
+        <!--низ сайта-->
+
+        <a href='Сайт.html'>
+      &#169 Art Gallery, 2019
+      </a>
+        <ul>
+            <p><b>Адрес</b></p>
+            <p>г.Минск, ул.Громова д.28</p>
+        </ul>
+    </div>
+</body>

@@ -1,0 +1,647 @@
+body {
+  background: linear-gradient(-45deg, rgb(51, 51, 155), rgb(246, 246, 250));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+/*шапка*/
+.hero {
+  background-image: url("фон комп.jpg");
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+}
+
+.header-left {
+  margin: 30px;
+}
+
+.header-center {
+  margin-top: 20px;
+  font-size: medium;
+  font-family: "Corben", cursive;
+  color: white;
+  letter-spacing: 0.1rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(11, 11, 39);
+}
+.header-right {
+  margin: 40px;
+  width: 240px;
+  height: 100%;
+  line-height: 30px;
+}
+
+.sponsor {
+  margin: 20px;
+}
+.button-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 2em;
+  border-width: 2px 0;
+  box-shadow: rgb(8, 8, 8);
+  height: 2em;
+  border-radius: 10px;
+  background: rgb(212, 21, 21);
+  text-align: center;
+  box-shadow: inset -1px -1px 17px 0px black;
+}
+
+.button-link:hover {
+  background: rgb(248, 3, 3);
+}
+
+a.button-link:active {
+  background: green;
+}
+.class-fieldset {
+  text-align: right;
+}
+
+.boxShadow{
+  border: 2px solid #fff;
+  border-radius: 10px; /* /* Белая рамка */
+  width: 70%;
+  max-width: 350px;
+  background: #d6d5d5;
+  box-shadow: 6px 6px #989898, 12px 12px #6c6666;
+}
+
+
+/*навигация*/
+.nav {
+  margin-top: 10px;
+  border-radius: 10px; /* Радиус скругления */
+  background: rgb(247, 249, 250);
+  height: 60px;
+  display: flex;
+
+
+}
+
+
+.boxShadow9 {
+  border: 2px solid #fff;
+  border-radius: 10px; /* /* Белая рамка */
+  width: 70%;
+  max-width: 500px;
+  padding: 1em;
+  background: #d6d5d5;
+  box-shadow: 6px 6px #989898, 12px 12px #6c6666;
+}
+
+.definition {
+  display: none;
+  position: absolute;
+  background: grey;
+  border-radius: 10px;
+  
+}
+.definition ul{
+  list-style-type: none; 
+	
+}
+
+.myfront:hover .definition {
+  display: block;
+  
+}
+
+.myfront:hover .definition a {
+  display: block;
+}
+
+.dogs {
+  width: 160px;
+  height: 150px; /* Размеры */
+  border-width: 2px;
+  border-radius: 50%; /* Радиус скругления */
+  box-shadow: 0px 1px 20px 0px #f8f5f5;
+}
+
+.scale {
+  display: flex; /* Строчно-блочный элемент */
+}
+
+.scale img {
+  transition: 1s; /* Время эффекта */
+  display: block; /* Убираем небольшой отступ снизу */
+}
+.scale img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.centralbloc {
+  display: flex;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.leftPanel {
+  width: 150px;
+  height: 100vh;
+  margin-left: 20px;
+}
+
+.middlePanel {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-style: solid;
+  border-color: blue;
+  padding: 15px;
+  max-width: 1000px;
+}
+
+.rightPanel {
+  text-align: left;
+  padding-left: 20px;
+  max-width: 500px;
+  line-height: 25px;
+}
+
+.boom {
+  display: flex;
+}
+
+.hit {
+  margin: 9px;
+  width: 150px;
+  height: 120px; /* Размеры */
+  border-width: 2px;
+  border-radius: 10px; /* Радиус скругления */
+  border: grey;
+  box-shadow: 0px 1px 20px 0px rgb(32, 31, 31);
+}
+
+.boom img {
+  transition: 3s; /* Время эффекта */
+  display: block; /* Убираем небольшой отступ снизу */
+}
+
+.boom img:hover {
+  -webkit-transform: rotate(180deg);
+}
+
+.frogfest {
+  display: flex;
+}
+
+.frog {
+  width: 100px;
+  height: 100px;
+}
+.frogfest img {
+  transition: 3s;
+}
+.frogfest img:hover {
+  -webkit-transform: translate(350px, 0);
+}
+.frogfest img:active {
+  -webkit-transform: translate(0, 350px);
+}
+
+.h4 {
+  color: rgb(45, 23, 80);
+  font-family: cursive;
+}
+.podval {
+  position: fixed;
+  left: 0;
+  bottom: 0; /* Левый нижний угол */
+  padding: 10px; /* Поля вокруг текста */
+  background: rgb(233, 231, 231); /* Цвет фона */
+  color: rgb(8, 1, 6);
+  width: 100%;
+}
+
+
+
+.sidebar {
+  position: fixed;
+  display: block;
+  width: 36px;
+  overflow: hidden;
+}
+.sidebar:hover {
+  width: 120px;
+  overflow: visible;
+}
+.sidebar li {
+  list-style: none; /*Убираем маркер*/
+  background: grey; /*Цвет фона для пункта*/
+  font-size: 1em;
+  border: groove;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.sidebar li:hover {
+  background: rgb(105, 110, 126);
+}
+
+.sidebar li:active {
+  background: green;
+}
+
+
+
+.sidebar li:hover > ul {
+  display: block;
+}
+
+.cool-menu li {
+  width: 100px;
+  height: 30px;
+  list-style: none; /*Убираем маркер*/
+  display: inline-block; /*Выстраиваем пункты в ряд*/
+  background: grey; /*Цвет фона для пункта*/
+  font-size: 1em;
+  border: groove;
+  border-radius: 50px;
+
+}
+.cool-menu ul li{
+  text-align: center;
+}
+.cool-menu li:hover {
+  background: rgb(75, 84, 117);
+  box-shadow:  0px 1px 20px 0px rgb(75, 84, 117) ;
+}
+
+
+.cool-menu li:active {
+  background: green;
+}
+
+.cool-menu li a {
+  color: rgb(253, 255, 255); /*Цвет шрифта в пункте*/
+  text-decoration: none; /*Убираем подчеркивание*/
+  
+}
+
+.cool-menu li ul {
+  display: none; /*Прячем выпадающее меню*/
+  margin: 20px;
+}
+
+.cool-menu li:hover > ul {
+  display: block; /*Прячем выпадающее меню*/
+  position: absolute;
+  width: 100px; /*Ширина выпадающего меню*/
+  
+}
+
+.user-card {
+  width: 500px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.user-card .headeravatar {
+  display: flex;
+  background-size: cover;
+}
+
+.user-card .headeravatar img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50px;
+}
+
+.user-card .headeravatar p {
+  margin: 10px;
+}
+
+.spoiler-block {
+  border: 3px gray solid;
+  border-radius: 5px;
+}
+.spoiler-block p {
+  padding: 10px;
+  margin: 0;
+}
+
+.spoiler-block .title {
+  cursor: pointer;
+}
+
+.spoiler-block .big-text {
+  border-top: 1px gray solid;
+}
+
+.tag-block {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 1px green solid;
+  border-radius: 15px;
+  padding: 2px 4px 2px 7px;
+}
+
+.tag .remove {
+  visibility: hidden;
+}
+
+.tag:hover .remove {
+  visibility: visible;
+}
+.iconside {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  display: inline-block;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  background: none;
+  background-size: cover;
+  cursor: pointer;
+}
+.chooseFoto {
+  background-image: url("iconfoto.png");
+}
+.chooseVideo {
+  background-image: url("iconfilm.png");
+}
+.chooseLink {
+  background-image: url("iconLink.jpg");
+}
+
+.icon.add {
+  background-image: url("iconadd.jpg");
+}
+.icon.delete {
+  background-image: url("icondelete.jpg");
+}
+.icon.remove-user-card {
+  background-image: url("remuve.jpg");
+}
+.icon.like{
+	background-image:url("iconLike.png");
+}
+
+.icon.eye{
+	background-image:url("iconEYE.png");
+}
+
+.icon.eye:hover{
+  box-shadow: 0px 1px 20px 0px green;
+}
+
+.edit {
+  display: flex;
+}
+.newValue {
+  width: 100%;
+  flex: 1;
+}
+.view {
+  max-width: 100px;
+}
+
+.popup-block {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+.popup-background {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 0;
+}
+.popup-content {
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  z-index: 1;
+}
+
+.popup-block img {
+  max-width: 500px;
+  max-height: 300px;
+}
+
+.sidebar.cool-menu.boxShadow9 li {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 13px 0;
+  padding: 0;
+  text-align: start;
+
+}
+
+.sidebar.cool-menu.boxShadow9 {
+  padding: 0px;
+}
+
+.sidebar.cool-menu.boxShadow9 ul{
+  margin: 0;
+
+}.sidebar.cool-menu.boxShadow9 li ul{
+  margin: 10px 20px;
+
+}
+ .inputting input:hover{
+   border: 1px solid yellow;
+   box-shadow: 0px 1px 20px 0px yellow;
+ } 
+ 
+ .full-image{
+  width: 600px;
+   height: 600px;
+   position: absolute;
+   
+ }
+  
+  /*  лемур-картинка на странице */
+.minimized {
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+ 
+.minimized:hover {
+  border: 1px solid yellow;
+  box-shadow: 0px 1px 20px 0px yellow;
+}
+ 
+/* увеличенная картинка */
+#magnify {
+  display: none;
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+ 
+#magnify img {
+  width: 100%;
+}
+ 
+/* затемняющий фон */
+#overlay {
+  display: none;
+ 
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+ 
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+ 
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url("https://codernote.ru/files/cross.png") no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+ 
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+ 
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+ 
+.images{
+	display: flex;
+  max-width: 500px;
+}
+
+.images .image{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px red solid;
+    margin: 5px;
+	width: calc(150px + 20px);  
+    height: calc(150px + 120px);
+	/* width: 320px; 300 */
+    /* height: 420px; 300 */
+}
+
+.images .image img{
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.images .image.full-view{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	margin:0;
+}
+
+.images .image.full-view .cover{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #000;
+	opacity: 0.5;
+	z-index: 0;
+}
+.images .image.full-view .image-block{
+	z-index: 1;
+}
+.images .image.full-view img{
+	max-width: calc(100% - 50px);
+    max-height: calc(100vh - 50px);
+}
+
+.image-block{
+	background: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.image-block h3{
+	text-align: center;	
+}
+
+.image-block .image-container{
+	display: flex;
+	justify-content: center;
+}
+.image-block:hover .eye{
+  box-shadow: 0px 1px 20px 0px red;}
+
+.image-block .footer{
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+}
+
+.image-block .footer span{
+	display: flex;
+    align-items: center;
+}
+
+.images .image.full-view .image-block h3{
+	display: none;
+}
+
+.images .image.full-view .image-block .footer span{
+	color: red;
+}
+.red{
+	color:red;
+}
+
+
+
+
+
+
+
+
+
+
